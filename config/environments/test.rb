@@ -1,5 +1,7 @@
 Rails.application.configure do
-  config.middleware.use RackSessionAccess::Middleware
+  APICurious::Application.configure do |config|
+    config.middleware.use RackSessionAccess::Middleware
+  end
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's

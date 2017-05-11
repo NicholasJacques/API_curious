@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <% if current_user %>
+      <h3><%= current_user.name %></h3>
+      <h3><%= link_to "Logout", '#' %></h3>
+    <% else %>
+      <h3><%= link_to "Sign in with Github", github_login_path %></h3>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

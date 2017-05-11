@@ -13,7 +13,7 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'omniauth-twitter'
+gem 'omniauth-github'
 gem 'figaro'
 # gem 'therubyracer', platforms: :ruby
 # gem 'redis', '~> 3.0'

@@ -9,13 +9,14 @@
   </head>
 
   <body>
-    <% if current_user %>
-      <h3><%= current_user.name %></h3>
-      <h3><%= link_to "Logout", logout_path %></h3>
+  
+    <% if logged_in? %>
+      <%= render partial: 'partials/user_navbar' %>
     <% else %>
-      <h3><%= link_to "Sign in with Github", github_login_path %></h3>
+      <%= render partial: 'partials/guest_navbar' %>
     <% end %>
 
     <%= yield %>
+
   </body>
 </html>

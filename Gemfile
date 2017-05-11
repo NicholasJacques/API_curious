@@ -6,15 +6,16 @@ git_source(:github) do |repo_name|
 end
 
 gem 'coffee-rails', '~> 4.2'
+gem 'figaro'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
+gem 'twitter-bootstrap-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'omniauth-github'
-gem 'figaro'
 # gem 'therubyracer', platforms: :ruby
 # gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'

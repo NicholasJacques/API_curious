@@ -12,7 +12,7 @@ RSpec.feature 'user can logout' do
     click_link 'Logout'
 
     expect(current_path).to eq(root_path)
-    expect(page).to have_link('Sign in with Github')
+    expect(page).to have_link('Login')
     expect(page).to_not have_link('Logout')
     expect(page).to_not have_content(user.name)
   end

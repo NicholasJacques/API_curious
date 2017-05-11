@@ -5,12 +5,12 @@ RSpec.feature 'user logs in' do
     stub_omniauth
 
     visit root_path
-    expect(page).to have_link('Sign in with Github')
+    expect(page).to have_link('Login')
 
-    click_link 'Sign in with Github'
+    click_link 'Login'
     expect(current_path).to eq(user_path(User.first.id))
-    expect(page).to have_content('Nicholas Jacques')
+    expect(page).to have_content('NicholasJacques')
     expect(page).to have_link('Logout')
-    expect(page).to_not have_link('Sign in with Github')
+    expect(page).to_not have_link('Login')
   end
 end
